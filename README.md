@@ -1,4 +1,4 @@
-# 5 Album Cost Calculator
+# 5 Album Cost Calculator Within $100
 
 ## Description
 This program allows users to input the costs of their five favorite albums, calculates the total and average cost, and checks if the total is within a $100 budget.
