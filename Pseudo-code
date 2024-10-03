@@ -1,0 +1,49 @@
+// Main module  
+Start Main  
+    Declare totalCost as Float  
+    Declare average as Float  
+    
+    // Call inputAlbumCosts to accumulate total cost  
+    totalCost = inputAlbumCosts()  
+    
+    // Call withinBudget to evaluate the budget  
+    withinBudget(totalCost)  
+End Main  
+
+// Input album costs module  
+Function inputAlbumCosts()  
+    Declare total as Float = 0  
+    Declare cost as Float  
+    Declare i as Integer  
+    
+    // Loop to input costs for five albums  
+    For i = 1 to 5  
+        Output "Enter the cost of album ", i, ":"  
+        Input cost  
+        total += cost // Accumulate total cost  
+    End For  
+
+    Return total // Return accumulated total cost  
+End Function  
+
+// Within budget module  
+Function withinBudget(totalCost)  
+    Output "Total cost of albums: ", totalCost  
+    // Check if total cost is within budget  
+    If totalCost <= 100 Then  
+        Output "You are within budget!"  
+    Else  
+        Output "You are over budget!"  
+    End If  
+
+    // Call averageCost to compute average  
+    averageCost(totalCost)  
+End Function  
+
+// Average cost module  
+Function averageCost(totalCost)  
+    Declare average as Float  
+    // Calculate average by dividing total cost by number of albums  
+    average = totalCost / 5  
+    Output "Average cost per album: ", average  
+End Function
